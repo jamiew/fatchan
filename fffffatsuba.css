@@ -1,8 +1,8 @@
 body {
 	font-family: arial,helvetica,sans-serif;
 	font-size: 10pt;
-	background: #FFFFEE url(/image/fade.png) top center repeat-x;
-	color: #800000;
+	background: #ffffff url(/image/fade.png) top center repeat-x;
+	color: black;
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-right: 0px;
@@ -17,20 +17,26 @@ blockquote { font-size: 10pt; }
 .doubledash { color: #D9BFB7; }
 .inputtext {
 	margin: 0;
-	margin-right: 2px; 
+	margin-right: 2px;
 	padding: 1px 4px;
 	border: 1px solid #aaa;
 	outline: none;
-	font-family: arial,helvetica,sans-serif; 
+	font-family: arial,helvetica,sans-serif;
 	font-size: 10pt;
 }
 input.inputtext { height: 1.75em; }
 td > .inputtext { height: auto; padding-top: 2px; padding-bottom: 3px; }
 .inputtext:focus { border: 1px solid #ea8; }
+.logo { margin-top: -10px; padding-bottom: 10px; }
 .logo img { border: 1px solid #800; }
+.logo font { background-color: #fff; padding: 5px; line-height: 3em; }
 .logo b span { font-family: tahoma;  }
 .logo span { font-size: 28px; letter-spacing: -2px; }
-hr { border: none; border-top: 1px solid #D9BFB7; height: 0px; }
+hr {
+  border: none; border: 0;
+  border: 1px dotted #fdf;
+  width: 100%; }
+.postarea { margin-top: 20px; background: url(http://fffff.at/images/boombox_sm.jpg) repeat-x 0px 360px; }
 .postblock { border: 1px solid #800; font-size: 10pt; padding: 0px 5px; line-height: 20px; }
 .rules { font-size: 10pt; }
 .rules a { text-decoration: none; }
@@ -48,23 +54,27 @@ iframe, .rotating { background: #F0E0D6; border-right: 1px solid #D9BFB7; border
 .deletebuttons br { display: none; }
 
 a, a:visited {
-	color: #0000EE;
+  background-color: #ff0;
+  padding: 1px 2px;
+  color: black;
 }
 
 a:hover {
-	color: #DD0000;
+	background-color: #f0f;
+	color: #fff;
 }
 
 a.quotelink {
-	color: #000080;
 }
 
 .logo {
 	clear: both;
 	text-align: center;
 	font-size: 24pt;
-	color: #800000;
+	color: #f0f;
+	background: url(http://fffff.at/images/fffffat_banner-kanye.jpg) repeat-x 0 10px;
 	width: 100%;
+
 }
 
 form {
@@ -74,9 +84,13 @@ form {
 .rules {
 	width: 468px;
 	font-size: 10px;
+	color: white;
 }
 
 .rules a, .rules a:visited, .rules a:link {
+  background-color: #ff0;
+  padding: 1px 2px;
+  color: black;
 }
 
 
@@ -86,8 +100,8 @@ form {
 .rules > li:before { content: "\2022 \20"; }
 
 .postblock {
-	background: #EEAA88;
-	color: #800000;
+	background: #f0f;
+	color: white;
 	font-weight: 800;
 }
 
@@ -138,13 +152,13 @@ td .filesize { display: inline; background: none; }
 }
 
 .reply {
-	background: #F0E0D6;
-	color: #800000;
+	background: #f9f9f9;
+	color: black;
 }
 
 .replyhl {
 	background: #F0C0B0;
-	color: #800000;
+	color: black;
 }
 
 .doubledash {
@@ -154,7 +168,7 @@ td .filesize { display: inline; background: none; }
 }
 
 a.quotejs:active, a.quotejs:link, a.quotejs:visited {
-	color: #800000;
+	color: black;
 	text-decoration: none;
 }
 
@@ -182,7 +196,7 @@ a.quotejs:hover {
 	text-align: center;
 }
 
-.adHeadline {font: bold 10pt serif; text-decoration: underline; color: #00e} 
+.adHeadline {font: bold 10pt serif; text-decoration: underline; color: #00e}
 .adText {font: normal 10pt serif; text-decoration: none; color: #800}
 
 #ad
@@ -213,14 +227,14 @@ a.quotejs:hover {
 {
 	padding: 0em;
 	background: #EEAA88;
-	color: #800000;
+	color: black;
 	font-size: 11px;
 }
 
 #ad div.ad-title a
 {
 	font-family: arial,helvetica, sans-serif;
-	color: #800000;
+	color: black;
 }
 
 #ad div.ad-text
@@ -239,7 +253,7 @@ a.quotejs:hover {
 .bottomAdTitle {
 	font-family: arial,helvetica, sans-serif;
 	background: #EEAA88;
-	color: #800000;
+	color: black;
 }
 
 #bottomAd {
@@ -306,6 +320,6 @@ a.quotejs:hover {
 
 td.replyhl { border: 1px solid #D99F91; border-left: none; border-top: none; padding: 2px; }
 td.deletebuttons input.checkbox { margin: 1px 2px 1px 2px; }
-div.logo img { margin: 5px 0px 5px 0px; }
+div.logo img { display: none; }
 
 .fstitle {float: left; width:25px;}
